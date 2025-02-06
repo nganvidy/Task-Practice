@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Top Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 65%;
+        margin: auto;
+        background-color: whitesmoke;
+        word-wrap: break-word;
+    font: 80% "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+    text-decoration-skip-ink: none;
+      }
+      .container-body {
+        padding: 0px 15px;
+        border: 0px solid wheat;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        background-color: white;
+      }
+
+      /* Header Container */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+      }
+
+      /* Logo Section */
+      .logo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .logo a {
+        display: block;
+        background: #fff url("https://img.syosetu.org/image/banner.png");
+        width: 220px;
+        height: 70px;
+        display: block;
+      }
+
+      /* Header Links */
+      .header-links {
+        display: flex;
+        gap: 5px;
+      }
+
+      .header-links a {
+        font-size: 12px;
+        color: #0056b3;
+        text-decoration: underline;
+      }
+
+      .header-links a:hover {
+        text-decoration: underline;
+        color: #b3a084;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        display: flex;
+        justify-content: center;
+        background: #847b65 url("hor_menu8_off.png") repeat-x top;
+        border-color: #cbc0a7 #7d735f #7d735f #cbc0a7;
+      }
+
+      .navbar a {
+        flex: 1;
+        text-align: center;
+        padding: 10px 2px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 700;
+        border-right: 1px solid #ddd;
+      }
+
+      .navbar a:last-child {
+        border-right: none;
+      }
+
+      .navbar a:hover {
+        background-color: #b3a084;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .header-links {
+          margin-top: 10px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .navbar a {
+          font-size: 12px;
+          padding: 8px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo h1 {
+          font-size: 18px;
+        }
+
+        .logo p {
+          font-size: 10px;
+        }
+
+        .navbar a {
+          font-size: 10px;
+          padding: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="container-body">
+      <header class="header">
+        <div class="logo">
+          <a href="#"></a>
+        </div>
+        <nav class="header-links">
+          <a href="#">小説閲覧履歴</a>|
+          <a href="#">利用規約</a>|
+          <a href="#">FAQ</a>|
+          <a href="#">取扱説明書</a>|
+          <a href="#">広告スキップ</a>
+        </nav>
+      </header>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <a href="#">ホーム</a>
+        <a href="#">推奨一覧</a>
+        <a href="#">マイページ</a>
+        <a href="#">小説検索</a>
+        <a href="#">ランキング</a>
+        <a href="#">検索掲示板</a>
+      </nav>
+    </div>
+  </body>
+</html>
