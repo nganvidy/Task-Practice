@@ -28,7 +28,6 @@
     align-items: center;
     padding: 10px 0px;
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
   }
 
   /* Logo Section */
@@ -42,19 +41,18 @@
     background: #fff url("https://img.syosetu.org/image/banner.png");
     width: 220px;
     height: 70px;
-    display: block;
   }
 
-  /* Header Links */
   .header-links {
     display: flex;
     gap: 5px;
     margin-bottom: 28px;
   }
 
-  .header-links a {
+  .header-links v-btn {
     font-size: 12px;
     color: #0056b3;
+    cursor: pointer;
     text-decoration: underline;
   }
 
@@ -67,16 +65,21 @@
   .navbar {
     display: flex;
     justify-content: center;
-    background: #847b65 url("hor_menu8_off.png") repeat-x top;
+    margin-top: -20px;
     border-color: #cbc0a7 #7d735f #7d735f #cbc0a7;
+    margin-bottom: -10px;
   }
 
-  .navbar a {
+  .navbar-header {
     flex: 1;
     text-align: center;
-    padding: 10px 2px;
+    width: 159px;
+    padding: 0px 2px;
     text-decoration: none;
+    background: #847b65 url("hor_menu8_off.png") repeat-x top;
     font-size: 14px;
+    border-radius: 0;
+    cursor: pointer;
     color: #fff;
     font-weight: 700;
     border-right: 1px solid #ddd;
@@ -132,6 +135,7 @@
   .sidebar-left h2 {
     font-size: 14px;
     font-weight: bold;
+    display: block;
     color: #fff;
     border: 1px solid #ddd;
     background: #b3a98c url("hor_menu8_off.png") repeat-x top;
@@ -232,7 +236,7 @@
     padding: 15px;
   }
 
-  .main-content-header h2 {
+  .main-content-header  h2{
     margin: 0 0 0.8em;
     font-size: 110%;
     color: #94845a;
@@ -253,6 +257,9 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+  }
+  .main-content-header p v-btn{
+    cursor: pointer;
   }
   .heading{
     padding: 5px;
@@ -381,4 +388,8 @@
 }
 .line-footer-body{
     margin: 15px 0 20px 0;
+}
+.navbar-buttom{
+  margin: 0 0 10px 0;
+
 }
